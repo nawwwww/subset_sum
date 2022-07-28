@@ -1,0 +1,100 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+
+input,
+button {
+    border: none;
+}
+
+/* fuck input arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.header {
+    color: Black;
+    font-size: 120px;
+    font-weight: 800;
+}
+
+#add-element,
+#calculate {
+    margin: 10px;
+    width: 300px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#calculate {
+    background-color: slategray;
+    transition: 500ms;
+}
+
+#calculate:hover {
+    background-color: cornflowerblue;
+    transition: 500ms;
+}
+
+#target-value,
+#result {
+    margin: 10px;
+    width: 100%;
+    font-size: 70px;
+    font-weight: 800;
+}
+#result {
+    background-color: slategray;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#result > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.init-values {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+
+.values-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 300px;
+    min-width: 100%;
+}
+
+.container-for-value-inputs {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.value-input {
+    width: 100%;
+    height: 40px;
+    font-size: 35px;
+    color: white;
+    background-color: slategray;
+    transition: 500ms;
+}
+
+.value-input:hover {
+    background-color: cornflowerblue;
+    transition: 500ms;
+}
